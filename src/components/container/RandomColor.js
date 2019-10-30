@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ColorDisplay from './colors/ColorDisplay';
+import ColorDisplay from '../colors/ColorDisplay';
 
 export default class RandomColor extends Component {
   state = {

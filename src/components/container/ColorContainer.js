@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ColorDisplay from './colors/ColorDisplay';
-import ColorPicker from './colors/ColorPicker';
+import ColorDisplay from '../colors/ColorDisplay';
+import ColorPicker from '../colors/ColorPicker';
 
 export default class ColorContainer extends Component {
   state = {
