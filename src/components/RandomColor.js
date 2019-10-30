@@ -5,14 +5,20 @@ export default class RandomColor extends Component {
   state = {
     backgroundColor: 'black' 
   };
-
+  
   selectColor = () => {
-    this.setState();
+    const colors = ['red', 'green', 'black', 'yellow'];
+    const random = Math.floor(Math.random() * colors.length);
+    this.setState({ backgroundColor: colors[random] });
+  }
+
+  componentDidMount() {
+    this.selectColor();
+    setInterval(this.selectColor, 1000);
   }
 
   render() {
     const { backgroundColor } = this.state;
-    const colors = ['red', 'green', 'black', 'yellow'];
 
     return (
       <>
