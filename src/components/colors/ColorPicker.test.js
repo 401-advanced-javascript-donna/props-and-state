@@ -11,7 +11,7 @@ describe('Color Display Component', () => {
         'black',
         'yellow'
       ]
-    }/>);
+    } selectColor={() => {}} />);
     expect(wrapper).toMatchSnapshot();
   });
 });
